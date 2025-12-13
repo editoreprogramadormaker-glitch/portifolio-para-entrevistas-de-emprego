@@ -1,0 +1,202 @@
+body{
+    background-image: url(/src/img/mono\ shimuneta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    padding: 30px;
+}  
+
+.cartão{
+    background-color: #2d3748;
+    width: 800px;
+    border: 2px solid #4a5568;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.abas img{
+    width: 30px;
+}
+
+.cartão .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartão .minhas-informacoes img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border: 5px solid #4299e1;
+}
+
+.cartão .minhas-informacoes .nome{
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.cartão .minhas-informacoes .cargo{
+    font-size: 24px;
+    color: #90cdf4;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #4299e1;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: rgba(66, 153, 225, 0.1);
+    margin-bottom: 20px;
+}
+
+.cartão .conteudo{
+    margin-top: 15px;
+}
+
+.cartão .abas{
+    display: flex;
+    background-color: #4a5568;
+}
+
+.cartão .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.cartão .abas .aba.selecionado{
+    background-color: #2d3748;
+    border-bottom: 3px solid #4299e1;
+}
+
+.cartão .abas .aba:hover{
+    background-color: #4a5568;
+}
+
+.cartão .abas .aba.selecionado:hover{
+    background-color: #2d3748;
+}
+
+.informacoes-abas .informacao{
+    min-height: 290px;
+    padding: 25px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{ 
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #90cdf4;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #4299e1;
+    padding-bottom: 10px;
+}
+
+.informacoes-abas .descricao{
+    font-size: 22px;
+    max-height: 200px;
+    overflow: auto;
+    padding-right: 15px;
+    color: #e2e8f0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.informacoes-abas .descricao span{
+    color: #90cdf4;
+    font-weight: bold;
+}
+
+/* Estilos para as redes sociais */
+.informacoes-abas .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.informacoes-abas .redes-sociais li{
+    width: 80%;
+    text-align: center;
+}
+
+.informacoes-abas .redes-sociais a{
+    display: block;
+    background-color: #4a5568;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.informacoes-abas .redes-sociais a:hover{
+    background-color: #4299e1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(66, 153, 225, 0.4);
+}
+
+/* Cores específicas para cada tipo de link */
+.informacoes-abas .redes-sociais .curriculo:hover {
+    background-color: #48bb78;
+    box-shadow: 0 5px 15px rgba(72, 187, 120, 0.4);
+}
+
+.informacoes-abas .redes-sociais .linkedin:hover {
+    background-color: #0077b5;
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+.informacoes-abas .redes-sociais .telefone:hover {
+    background-color: #25d366;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.informacoes-abas .redes-sociais .github:hover {
+    background-color: #6e5494;
+    box-shadow: 0 5px 15px rgba(110, 84, 148, 0.4);
+}
+
+/* Scrollbar */
+.informacoes-abas .descricao::-webkit-scrollbar {
+    width: 8px;
+}
+
+.informacoes-abas .descricao::-webkit-scrollbar-track {
+    background: #4a5568;
+    border-radius: 10px;
+}
+
+.informacoes-abas .descricao::-webkit-scrollbar-thumb {
+    background: #4299e1;
+    border-radius: 10px;
+}
